@@ -1,1 +1,2 @@
 # RShinyDataBrowser
+This repository has the code for the ONT Data Explorer R shiny app: https://millerlaboratory.shinyapps.io/Data_Explorer_V1/ being developed by the Miller Lab at The Univeristy of Washington.
