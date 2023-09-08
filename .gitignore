@@ -49,6 +49,8 @@ po/*~
 Data
 Data/*
 
+._*
+
 
 # RStudio Connect folder
 rsconnect/
