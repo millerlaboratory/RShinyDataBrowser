@@ -183,8 +183,12 @@ server <- function(input, output, session) {
   output$twoAlleles <- renderPlot({
     ggplot(two(), aes(x=sample, y=copy_number, fill=allele)) +
       geom_bar(stat="identity", position=position_dodge()) +
+      xlab("Sample")+
+      ylab("Copy number")+
+      scale_fill_manual(values=c("#CC6666", "#9999CC"))+
       theme(axis.text = element_text(size=18),
             axis.title = element_text(size=18),
+            axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1),
             panel.background = element_rect(fill = "white"),
             panel.border = element_rect(colour = "black", fill=NA),
             panel.grid.major = element_line(size = 0.25, linetype = 'solid',
